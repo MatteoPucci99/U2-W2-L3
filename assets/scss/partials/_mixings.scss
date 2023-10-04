@@ -1,0 +1,17 @@
+@mixin floating($boxShadowDefault: 5px 5px 15px 5px rgb(43, 43, 43), $borderDefault: 2px solid rgb(128, 128, 128) ) {
+    box-shadow: $boxShadowDefault;
+    border-radius:10px;
+    border: $borderDefault;
+}
+
+h1+img {
+    @include floating()
+}
+
+main img {
+    @include floating(-5px -5px 15px 5px rgba(0, 0, 0, 0.377), )
+}
+
+
+// $spacing: 20%;
+

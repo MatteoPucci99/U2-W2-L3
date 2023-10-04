@@ -1,0 +1,22 @@
+$font-size-sm:0.5em;
+$font-size-normal:1em;
+$font-size-md:1.5em;
+$font-size-lg:2em;
+$font-size-xl:2.5em;
+
+@mixin title-big {
+ font-size: $font-size-lg;
+ font-family: 'Times New Roman', Times, serif;
+ text-decoration: underline;
+
+
+}
+
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    @include title-big;
+}

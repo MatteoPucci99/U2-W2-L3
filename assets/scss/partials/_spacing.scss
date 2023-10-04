@@ -1,0 +1,50 @@
+$sizes-map: (
+    xs: 10px,
+    sm: 12px,
+    normal: 16px,
+    lg: 24px,
+    xl: 32px,
+    xxl: 48px,
+);
+
+
+
+@each $breakpoint, $value in $sizes-map {
+    .margin-#{$breakpoint} {
+        margin: $value;
+    }
+}
+@each $breakpoint, $value in $sizes-map {
+    .padding-#{$breakpoint} {
+        padding: $value;
+    }
+}
+
+
+body {
+
+    .container {
+        margin-top: 2em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    display: flex;
+    flex-direction: column;
+   
+    ul {
+        display: flex;
+        justify-content: center;
+        li a img {
+            margin-right: 30px;
+        }
+    }
+  
+    header  {
+        text-align: center;
+       
+        
+       
+ 
+    }
+}
